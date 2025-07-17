@@ -1,0 +1,36 @@
+{
+    "portfolio": [
+        {
+            "id": 1,
+            "title": "DESCIENCE",
+            "description": "E-Learning platform for students and teachers",
+            "imageUrl": "portfolioImage/descience.png",
+            "techStack": ["Laravel", "Tailwind", "MySQL"],
+            "link": "https://github.com/Yofandra/Proyek1"
+        },
+        {
+            "id": 2,
+            "title": "Palugada Import",
+            "description": "Company profile website for Palugada Import",
+            "imageUrl": "portfolioImage/palugada.png",
+            "techStack": ["React", "Tailwind"],
+            "link": "https://palugadaimport.com/"
+        },
+        {
+            "id": 3,
+            "title": "House Of Bottle",
+            "description": "Company profile website for House Of Bottle",
+            "imageUrl": "portfolioImage/houseOfBottle.png",
+            "techStack": ["React", "Tailwind"],
+            "link": "https://houseofbottle.com/"
+        },
+        {
+            "id": 4,
+            "title": "LaslesVPN Clone",
+            "description": "Clone of LaslesVPN landing page",
+            "imageUrl": "portfolioImage/lasles_vpn.png",
+            "techStack": ["HTML", "SASS"],
+            "link": "https://yofandra.github.io/Slicing-Challenge/"
+        }
+    ]
+}
