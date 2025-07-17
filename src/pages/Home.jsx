@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import me from "../assets/me.png";
+import me2 from "../assets/me2.jpg";
 import Service from "../sections/Service";
 import Portofolio from "../sections/Portofolio";
 import Contact from "../sections/Contact";
@@ -32,7 +32,7 @@ const Home = () => {
         <div className="w-[160px] h-[160px] md:w-[515px] md:h-[515px]">
           <img
             className="w-full h-full object-cover rounded-full"
-            src={me}
+            src={me2}
             alt=""
           />
         </div>
