@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,17 +50,15 @@ const Navbar = () => {
   };
 
   const NavItem = ({ to, href, label }) => {
-    const isActive = location.pathname === to;
     const commonClasses =
-      "block text-lg font-poppins md:text-2xl py-5 md:px-0 text-primary hover:scale-110 transition-transform duration-200";
-    const activeClass = isActive ? "font-semibold hover:scale-100" : "";
+      "block text-lg font-barlow md:text-xl py-5 md:px-0 text-primary hover:underline underline-offset-4 transition duration-300";
 
     return href ? (
       <button onClick={() => handleNavClick(href)} className={`${commonClasses}`}>
         {label}
       </button>
     ) : (
-      <Link to={to} onClick={closeMenu} className={`${commonClasses} ${activeClass}`}>
+      <Link to={to} onClick={closeMenu} className={`${commonClasses}`}>
         {label}
       </Link>
     );
@@ -67,13 +66,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed top-0 w-full h-16 md:h-16 lg:h-24 z-50 m-0 lg:px-12 ${
-        isOpen ? "bg-secondary" : isScrolled ? "bg-secondary" : "bg-transparent"
+      className={`navbar fixed top-0 w-full h-16 md:h-16 lg:h-36 z-50 m-0 px-5 lg:px-40 ${
+        isOpen ? "bg-white" : isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >
-      <div className="navbar-container h-full flex justify-between items-center px-4 md:px-4 ">
+      <div className="navbar-container h-full flex justify-between items-center">
 
-        <p className="flex items-center h-16 md:h-24 font-baskerville md:text-2xl">YOFANDRA</p>
+        <img src={Logo} alt="Logo" className="h-8 md:h-12" />
 
         <div className="menu-toggle md:hidden" onClick={toggleMenu}>
           <svg
@@ -82,7 +81,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className={`w-6 h-6 text-black`}
+            className={`w-6 h-6 text-primary`}
           >
             <path
               strokeLinecap="round"
@@ -97,7 +96,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`nav-links flex flex-col md:flex-row md:gap-6 items-center pt-20 md:pt-0 h-screen md:!h-full absolute md:static bg-secondary w-full md:w-auto top-16 md:top-4 left-0 transition-all duration-300 ${
+          className={`nav-links flex flex-col md:flex-row md:gap-6 items-center pt-20 md:pt-0 h-screen md:!h-full absolute md:static bg-white w-full md:w-auto top-16 md:top-4 left-0 transition-all duration-300 ${
             isOpen ? "block" : "hidden md:!flex"
           }`}
         >
@@ -105,16 +104,13 @@ const Navbar = () => {
             <NavItem to="/" label="Home"/>
           </li>
           <li>
-            <NavItem href="#about-section" label="About Me"/>
+            <NavItem href="#about-section" label="About"/>
           </li>
           <li>
-            <NavItem href="#service-section" label="Service"/>
+            <NavItem href="#experience-section" label="Experience"/>
           </li>
           <li>
-            <NavItem href="#portfolio-section" label="Portofolio"/>
-          </li>
-          <li>
-            <NavItem href="#tools-section" label="Tools"/>
+            <NavItem href="#projects-section" label="Projects"/>
           </li>
           <li>
             <NavItem href="#contact-section" label="Contact"/>

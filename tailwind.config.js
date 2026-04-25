@@ -7,15 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#088395',
-        'secondary' : '#FFFCF5',
+        'primary': '#1E1E1E',
+        'secondary' : '#ffffff',
       },
       fontFamily: {
+        barlow: ['Barlow Semi Condensed', 'sans-serif'],
+        anton: ['Anton', 'sans-serif'],
         sans: ['Montserrat', 'sans-serif'],
         baskerville: ['Baskerville SC', 'Libre Baskerville', 'serif'],
         poppins: ["Poppins", "sans-serif"],
         overpass: ["Overpass", "sans-serif"],
-        
       },
     },
     screens: {
