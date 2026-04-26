@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed top-0 w-full h-16 md:h-16 lg:h-36 z-50 m-0 px-5 lg:px-40 ${
+      className={`navbar fixed top-0 w-full h-16 md:h-16 lg:h-24 z-50 m-0 px-5 lg:px-40 ${
         isOpen ? "bg-white" : isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >

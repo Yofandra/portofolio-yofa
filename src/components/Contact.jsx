@@ -50,14 +50,14 @@ const Contact = () => {
                     <h3 className="text-primary font-bold text-lg md:text-xl mb-2">Get In Touch</h3>
                     <div className="flex md:flex-col">
                         <div className="flex items-center md:mt-5 mr-3 md:mr-0">
-                            <EnvelopeIcon className="w-4 md:w-10 text-primary" />
+                            <EnvelopeIcon className="w-7 md:w-10 text-primary" />
                             <div className="mx-2">
                                 <h5 className="text-primary text-sm md:text-sm font-bold">Email</h5>
                                 <a href="mailto:yofandraarta@gmail.com" className="text-primary text-sm md:text-sm">yofandraarta@gmail.com</a>
                             </div>
                         </div>
                         <div className="flex items-center md:mt-5">
-                            <PhoneIcon className="w-4 md:w-10 text-primary" />
+                            <PhoneIcon className="w-7 md:w-10 text-primary" />
                             <div className="mx-2">
                                 <h5 className="text-primary text-sm md:text-sm font-bold">Phone Number</h5>
                                 <a href="https://wa.me/6282140950530" className="text-primary text-sm md:text-sm">+62 821-4095-0530</a>

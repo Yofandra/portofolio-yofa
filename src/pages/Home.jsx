@@ -4,9 +4,12 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Line from "../assets/line.png";
 import PartTracking from "../assets/part_tracking.png";
+import WorkingOrder from "../assets/working_order/kelola_barang.png";
 import Contact from "../components/Contact";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-page relative bg-secondary font-barlow">
       <Navbar />
@@ -23,7 +26,7 @@ const Home = () => {
             </span>
           </h1>
         </div>
-        <img src={Me} alt="Yofandra" className="lg:h-96" />
+        <img src={Me} alt="Yofandra" className="lg:h-96 mt-10 md:mt-0" />
         <a className="absolute bottom-4" href="/cv.pdf">
           <button className="bg-primary w-[170px] lg:w-48 h-[50px] rounded-lg shadow-lg shadow-primary text-white text-base lg:text-2xl transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
             Download CV
@@ -77,10 +80,16 @@ const Home = () => {
           />
           <div className="mt-5 md:mt-0">
             <div className="lg:w-[670px] mb-5 lg:mb-10">
-              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">Nov 2025 - May 2026</p>
+              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">
+                Nov 2025 - May 2026
+              </p>
               <div className="flex justify-between items-center mt-2">
-                <h3 className="text-xl md:text-2xl font-medium">Web Developer Intern</h3>
-                <p className="text-base md:text-xl text-[#6D6D6D]">Ayam Bakar Pak D</p>
+                <h3 className="text-xl md:text-2xl font-medium">
+                  Web Developer Intern
+                </h3>
+                <p className="text-base md:text-xl text-[#6D6D6D]">
+                  Ayam Bakar Pak D
+                </p>
               </div>
               <p className="lg:w-[610px] text-base lg:text-lg mt-2">
                 Developed and maintained web applications using Laravel,
@@ -92,9 +101,13 @@ const Home = () => {
               </p>
             </div>
             <div className="lg:w-[670px] mb-5 lg:mb-10">
-              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">Jul 2025 - Nov 2026</p>
+              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">
+                Jul 2025 - Nov 2026
+              </p>
               <div className="flex justify-between items-center mt-2">
-                <h3 className="text-xl md:text-2xl font-medium">Web Developer</h3>
+                <h3 className="text-xl md:text-2xl font-medium">
+                  Web Developer
+                </h3>
                 <p className="text-base md:text-xl text-[#6D6D6D]">Freelance</p>
               </div>
               <p className="lg:w-[610px] text-base lg:text-lg mt-2">
@@ -106,9 +119,13 @@ const Home = () => {
               </p>
             </div>
             <div className="lg:w-[670px] mb-5 lg:mb-10">
-              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">Jul 2024 - Dec 2024</p>
+              <p className="leading-none text-sm md:text-base text-[#6D6D6D]">
+                Jul 2024 - Dec 2024
+              </p>
               <div className="flex justify-between items-center mt-2">
-                <h3 className="text-xl md:text-2xl font-medium">Web Developer Intern</h3>
+                <h3 className="text-xl md:text-2xl font-medium">
+                  Web Developer Intern
+                </h3>
                 <p className="text-xs md:text-xl text-[#6D6D6D]">
                   PT Surabaya Autocomp Indonesia
                 </p>
@@ -128,9 +145,14 @@ const Home = () => {
         id="projects-section"
         className="mt-12 lg:mt-40 flex flex-col justify-center items-center lg:px-[180px]"
       >
-        <h1 className="text-3xl md:text-5xl font-medium text-center">Projects</h1>
+        <h1 className="text-3xl md:text-5xl font-medium text-center">
+          Projects
+        </h1>
         <div className="flex flex-col md:flex-row items-center gap-12 mt-10 lg:mt-16">
-          <div className="w-80 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+          <div
+            onClick={() => navigate("/part-tracking")}
+            className="w-80 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+          >
             <div className="w-full flex justify-center">
               <img
                 src={PartTracking}
@@ -139,23 +161,26 @@ const Home = () => {
               />
             </div>
             <div className="px-4 md:px-6">
-              <h1 className="text-lg md:text-2xl font-medium mt-4">Part Tracking System</h1>
+              <h1 className="text-lg md:text-2xl font-medium mt-4">
+                Part Tracking System
+              </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                web application to manage inter-department goods requests in a
-                production environment
+                web application to manage incoming goods, transfer items, and inventory
               </p>
             </div>
           </div>
-          <div className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+          <div onClick={() => navigate('/working-order')} className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
             <div className="w-full flex justify-center">
               <img
-                src={PartTracking}
-                alt="Part Tracking"
+                src={WorkingOrder}
+                alt="Working Order"
                 className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg"
               />
             </div>
             <div className="px-4 md:px-6 text-black">
-              <h1 className="text-lg md:text-2xl font-medium mt-4">Working Order</h1>
+              <h1 className="text-lg md:text-2xl font-medium mt-4">
+                Working Order
+              </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
                 web application to manage inter-department goods requests in a
                 production environment
