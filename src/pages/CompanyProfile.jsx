@@ -71,7 +71,7 @@ const CompanyProfile = () => {
                   <img
                     src={feature.img}
                     alt={feature.title}
-                    className="lg:w-[700px] shadow-lg"
+                    className="lg:w-[700px] shadow-lg rounded-lg"
                   />
                   <div>
                     <h3 className="text-2xl md:text-3xl font-semibold">
@@ -119,7 +119,7 @@ const CompanyProfile = () => {
                   <img
                     src={feature.img}
                     alt={feature.title}
-                    className="lg:w-[700px] shadow-lg"
+                    className="lg:w-[700px] shadow-lg rounded-lg"
                   />
                 </>
               )}

@@ -66,7 +66,7 @@ const WorkingOrder = () => {
                 <div key={index} className={`flex ${feature.align === 'left' ? 'flex-col md:flex-row' : 'flex-col-reverse md:flex-row'} items-center gap-3 md:gap-16 px-6 md:px-0`}>
                     {feature.align === 'left' ? (
                         <>
-                            <img src={feature.img} alt={feature.title} className="lg:w-[700px] shadow-lg" />
+                            <img src={feature.img} alt={feature.title} className="lg:w-[700px] shadow-lg rounded-lg" />
                             <div>
                                 <h3 className="text-2xl md:text-3xl font-semibold">{feature.title}</h3>
                                 <p className="text-sm md:text-base mt-2 md:mt-5">{feature.description}</p>
@@ -78,7 +78,7 @@ const WorkingOrder = () => {
                                 <h3 className="text-2xl md:text-3xl font-semibold">{feature.title}</h3>
                                 <p className="text-sm md:text-base mt-2 md:mt-5">{feature.description}</p>
                             </div>
-                            <img src={feature.img} alt={feature.title} className="lg:w-[700px] shadow-lg" />
+                            <img src={feature.img} alt={feature.title} className="lg:w-[700px] shadow-lg rounded-lg" />
                         </>
                     )}
                 </div>

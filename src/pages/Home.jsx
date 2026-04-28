@@ -8,6 +8,7 @@ import WorkingOrder from "../assets/working_order/kelola_barang.png";
 import CompanyProfile from "../assets/company_profile/card_company_profile.png";
 import Contact from "../components/Contact";
 import { useNavigate } from "react-router-dom";
+import PharmaPath from "../assets/pharma_path/dashboard_user.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -112,7 +113,7 @@ const Home = () => {
                 <p className="text-base md:text-xl text-[#6D6D6D]">Freelance</p>
               </div>
               <p className="lg:w-[610px] text-base lg:text-lg mt-2">
-                Developed 5+ company profile websites for multiple brands using
+                Developed 5 company profile websites for multiple brands using
                 React, and built an e-commerce platform using NestJS (backend)
                 and Next.js (frontend). Designed and integrated RESTful APIs for
                 product management, user interactions, and transactions, while
@@ -144,10 +145,10 @@ const Home = () => {
 
       <div
         id="projects-section"
-        className="mt-12 lg:mt-40 flex flex-col justify-center items-center lg:px-[180px]"
+        className="mt-12 lg:mt-20 flex flex-col justify-center items-center lg:px-[180px]"
       >
         <h1 className="text-3xl md:text-5xl font-medium text-center">
-          Projects
+          Projects Showcase
         </h1>
         <div className="flex flex-col md:flex-row items-center gap-12 mt-10 lg:mt-16">
           <div
@@ -158,7 +159,7 @@ const Home = () => {
               <img
                 src={PartTracking}
                 alt="Part Tracking"
-                className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg"
+                className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg rounded-lg"
               />
             </div>
             <div className="px-4 md:px-6">
@@ -166,7 +167,7 @@ const Home = () => {
                 Part Tracking System
               </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                web application to manage incoming goods, transfer items, and inventory
+                Web application to manage incoming goods, transfer items, and inventory
               </p>
             </div>
           </div>
@@ -175,7 +176,7 @@ const Home = () => {
               <img
                 src={WorkingOrder}
                 alt="Working Order"
-                className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg"
+                className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg rounded-lg"
               />
             </div>
             <div className="px-4 md:px-6 text-black">
@@ -195,7 +196,7 @@ const Home = () => {
               <img
                 src={CompanyProfile}
                 alt="Company Profile"
-                className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg"
+                className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg rounded-lg"
               />
             </div>
             <div className="px-4 md:px-6 text-black">
@@ -207,23 +208,23 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div
-            onClick={() => navigate("/part-tracking")}
+          <div  
+            onClick={() => navigate("/pharma-path")}
             className="w-80 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
           >
             <div className="w-full flex justify-center">
               <img
-                src={PartTracking}
-                alt="Part Tracking"
-                className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg"
+                src={PharmaPath}
+                alt="Pharma Path"
+                className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg rounded-lg"
               />
             </div>
             <div className="px-4 md:px-6">
               <h1 className="text-lg md:text-2xl font-medium mt-4">
-                Part Tracking System
+                Pharma Path
               </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                web application to manage incoming goods, transfer items, and inventory
+                An application designed to help pharmacy students learn by completing quizzes related to pharmaceutical topics.
               </p>
             </div>
           </div>
