@@ -82,7 +82,7 @@ const PharmaPath = () => {
                 </div>
             ))}
         </div>
-        <p className="text-center text-base md:text-xl mt-10 md:mt-20 px-5 md:px-0">You can also visit this website at <a href="https://pharma-path.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline cursor-pointer">Pharma Path</a></p>
+        <p className="text-center text-base md:text-xl mt-10 md:mt-20 px-5 md:px-0">You can also visit this website at <a href="http://pharmapath.xo.je/quiz" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline cursor-pointer">Pharma Path</a></p>
         <p className="text-center text-base md:text-xl mt-5 px-5 md:px-0">email: user@gmail.com</p>
         <p className="text-center text-base md:text-xl px-5 md:px-0">password: useruser</p>
       </div>
