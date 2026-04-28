@@ -100,8 +100,8 @@ const PartTracking = () => {
             <Navbar />
             <div className="pt-20 lg:pt-40 lg:mx-[150px]">  
                 <h1 className="text-center text-3xl md:text-5xl font-medium">Part Tracking System</h1>
-                <p className="text-center text-base md:text-xl mt-5">Web application to manage incoming goods, transfer items, and inventory</p>
-                <div className="flex flex-col mt-10 lg:mt-20 gap-16 md:gap-20">
+                <p className="text-center text-base md:text-xl mt-5 px-5 md:px-0">Web application to manage incoming goods, transfer items, and inventory</p>
+                <div className="flex flex-col mt-10 lg:mt-20 gap-14 md:gap-20">
                     {featureCard.map((feature, index) => (
                         <div key={index} className={`flex ${feature.align === 'left' ? 'flex-col md:flex-row' : 'flex-col-reverse md:flex-row'} items-center gap-3 md:gap-16 px-6 md:px-0`}>
                             {feature.align === 'left' ? (

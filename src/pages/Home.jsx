@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Line from "../assets/line.png";
 import PartTracking from "../assets/part_tracking.png";
 import WorkingOrder from "../assets/working_order/kelola_barang.png";
+import CompanyProfile from "../assets/company_profile/card_company_profile.png";
 import Contact from "../components/Contact";
 import { useNavigate } from "react-router-dom";
 
@@ -184,6 +185,45 @@ const Home = () => {
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
                 web application to manage inter-department goods requests in a
                 production environment
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row items-center gap-12 mt-10 lg:mt-16">
+          <div onClick={() => navigate('/company-profile')} className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+            <div className="w-full flex justify-center">
+              <img
+                src={CompanyProfile}
+                alt="Company Profile"
+                className="w-72 lg:w-[370px] lg:h-[300px] object-cover shadow-lg"
+              />
+            </div>
+            <div className="px-4 md:px-6 text-black">
+              <h1 className="text-lg md:text-2xl font-medium mt-4">
+                Company Profile Websites
+              </h1>
+              <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
+                Company website to provide information about the company and its products
+              </p>
+            </div>
+          </div>
+          <div
+            onClick={() => navigate("/part-tracking")}
+            className="w-80 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+          >
+            <div className="w-full flex justify-center">
+              <img
+                src={PartTracking}
+                alt="Part Tracking"
+                className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg"
+              />
+            </div>
+            <div className="px-4 md:px-6">
+              <h1 className="text-lg md:text-2xl font-medium mt-4">
+                Part Tracking System
+              </h1>
+              <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
+                web application to manage incoming goods, transfer items, and inventory
               </p>
             </div>
           </div>
