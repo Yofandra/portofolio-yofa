@@ -6,6 +6,7 @@ import Line from "../assets/line.png";
 import PartTracking from "../assets/part_tracking.png";
 import WorkingOrder from "../assets/working_order/kelola_barang.png";
 import CompanyProfile from "../assets/company_profile/card_company_profile.png";
+import ECommerce from "../assets/e_commerce/e-commerce.png";
 import Contact from "../components/Contact";
 import { useNavigate } from "react-router-dom";
 import PharmaPath from "../assets/pharma_path/dashboard_user.png";
@@ -167,11 +168,15 @@ const Home = () => {
                 Part Tracking System
               </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                Web application to manage incoming goods, transfer items, and inventory
+                Web application to manage incoming goods, transfer items, and
+                inventory
               </p>
             </div>
           </div>
-          <div onClick={() => navigate('/working-order')} className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+          <div
+            onClick={() => navigate("/working-order")}
+            className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+          >
             <div className="w-full flex justify-center">
               <img
                 src={WorkingOrder}
@@ -191,7 +196,10 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-12 mt-10 lg:mt-16">
-          <div onClick={() => navigate('/company-profile')} className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+          <div
+            onClick={() => navigate("/company-profile")}
+            className="w-80 lg:w-[420px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+          >
             <div className="w-full flex justify-center">
               <img
                 src={CompanyProfile}
@@ -204,11 +212,12 @@ const Home = () => {
                 Company Profile Websites
               </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                Company website to provide information about the company and its products
+                Company website to provide information about the company and its
+                products
               </p>
             </div>
           </div>
-          <div  
+          <div
             onClick={() => navigate("/pharma-path")}
             className="w-80 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
           >
@@ -224,9 +233,30 @@ const Home = () => {
                 Pharma Path
               </h1>
               <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
-                An application designed to help pharmacy students learn by completing quizzes related to pharmaceutical topics.
+                An application designed to help pharmacy students learn by
+                completing quizzes related to pharmaceutical topics.
               </p>
             </div>
+          </div>
+        </div>
+        <div
+          onClick={() => navigate("/e-commerce")}
+          className="w-80 mt-10 lg:mt-16 lg:w-[610px] py-5 cursor-pointer bg-[#f8f8f8] rounded-xl shadow-lg flex flex-col justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+        >
+          <div className="w-full flex justify-center">
+            <img
+              src={ECommerce}
+              alt="E-Commerce"
+              className="w-72 lg:w-[560px] lg:h-[300px] object-cover shadow-lg rounded-lg"
+            />
+          </div>
+          <div className="px-4 md:px-6">
+            <h1 className="text-lg md:text-2xl font-medium mt-4">
+              Shou (Sportswear E-Commerce)
+            </h1>
+            <p className="text-sm md:w-[360px] leading-4 md:leading-5 mt-1 md:mt-2">
+              A web-based application for selling sportswear products from the Shou brand.
+            </p>
           </div>
         </div>
       </div>
